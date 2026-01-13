@@ -1,37 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Lucky Coin Toss</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>Voice Coin Toss Referee</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1>🪙 Lucky Coin Toss</h1>
+  <h1>🪙 Voice Coin Toss</h1>
+  <p class="subtitle">Online referee for toss (voice-controlled)</p>
 
   <div class="coin-container">
-    <img id="coin" src="images/head.png" alt="coin">
+    <img id="coin" src="images/head.png" alt="Coin" />
   </div>
 
-  <select id="userChoice">
-    <option value="Head">Head</option>
-    <option value="Tail">Tail</option>
-  </select>
+  <button id="voiceBtn" onclick="startListening()">
+    🎙️ Start Voice Toss
+  </button>
 
-  <button onclick="tossCoin()">Flip Coin</button>
+  <p id="voiceStatus" class="status">
+    Say: <b>"Flip the coin"</b>
+  </p>
 
-  <h2 id="result"></h2>
-
-  <!-- 🎭 Secret Cheat Toggle -->
-  <div class="cheat">
-    <label>
-      <input type="checkbox" id="cheatMode">
-      🎭 Cheat Mode (Secret)
-    </label>
-  </div>
-
-  <audio id="flipSound" src="sounds/flip.mp3"></audio>
+  <div id="result" class="result"></div>
 
   <script src="script.js"></script>
 </body>
