@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Lucky Coin Toss</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>🪙 Lucky Coin Toss</h1>
+
+  <div class="coin-container">
+    <img id="coin" src="images/head.png" alt="coin">
+  </div>
+
+  <select id="userChoice">
+    <option value="Head">Head</option>
+    <option value="Tail">Tail</option>
+  </select>
+
+  <button onclick="tossCoin()">Flip Coin</button>
+
+  <h2 id="result"></h2>
+
+  <!-- 🎭 Secret Cheat Toggle -->
+  <div class="cheat">
+    <label>
+      <input type="checkbox" id="cheatMode">
+      🎭 Cheat Mode (Secret)
+    </label>
+  </div>
+
+  <audio id="flipSound" src="sounds/flip.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
