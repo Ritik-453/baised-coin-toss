@@ -33,12 +33,18 @@ The system listens silently in the background and detects the caller’s choice 
 Detected even inside sentences like:
 > “We will take bharat”  
 > “It is tails for us”
+> “bhai mero to bharat s”
+> “tails h mero”
+> “arey bharat lelo”
+> “rupyo padega bhai”
+> “hmara head hai”
+> “tail se jeetenge”
 
 ---
 
 ## 🚀 Live Demo
 
-👉 https://ritik-453.github.io/baised-coin-toss/
+👉 https://ritik-453.github.io/online-coin-toss-baised/
 
 ---
 
@@ -54,3 +60,4 @@ Detected even inside sentences like:
 
 Ritik Yadav  
 https://github.com/ritik-453
+
