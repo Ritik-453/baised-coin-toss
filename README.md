@@ -1,34 +1,38 @@
-# 🪙 Voice Coin Toss Referee (Biased)
+# 🪙 Online Coin Toss (Baised)
 
-A realistic **voice-controlled online coin toss referee** designed for sports toss scenarios — with a subtle statistical advantage built in.
+A simple and realistic online coin toss application designed for sports toss scenarios.
 
-The app listens to voice commands like:
-- “Flip the coin”
-- “Heads” / “Tails”
-
-The result is announced using a **referee voice**, just like on the field.
-
----
-
-## 🎯 Key Concept
-
-- Captain B gives voice commands
-- The system waits for the call
-- Coin is tossed only after “Heads” or “Tails”
-- Outcome is biased **9:1 in favour of Captain A**
-- Still looks fair and realistic
+The system listens silently in the background and detects the caller’s choice naturally during conversation. The coin flips when the flip button is pressed and resolves once a valid call is detected.
 
 ---
 
 ## ✨ Features
 
-- 🎙️ Voice recognition (Web Speech API)
-- 🗣️ Referee voice announcement
-- 🪙 Real coin images
-- ⏳ Result hidden until call is made
-- 📱 Mobile-friendly UI
-- 🌐 Fully client-side (no backend)
-- 🔐 Works on GitHub Pages (HTTPS)
+- Simple one-button toss (FLIP)
+- Real coin animation
+- Voice call detection inside full sentences
+- Supports common regional call words
+- Automatic result if no call is made
+- Mobile-friendly
+- No installation required
+
+---
+
+## 🎙️ Supported Call Keywords
+
+**Heads**
+- head
+- heads
+- bharat
+
+**Tails**
+- tail
+- tails
+- rupyo
+
+Detected even inside sentences like:
+> “We will take bharat”  
+> “It is tails for us”
 
 ---
 
@@ -38,47 +42,15 @@ The result is announced using a **referee voice**, just like on the field.
 
 ---
 
-## 🛠 Tech Stack
+## ⚠️ Notes
 
-- HTML5
-- CSS3
-- JavaScript (Vanilla)
-- Web Speech API
-- Speech Synthesis API
-
----
-
-## 📂 Project Structure
-
-baised-coin-toss/
-│── index.html
-│── style.css
-│── script.js
-│── README.md
-│
-├── images/
-│ ├── head.png
-│ └── tail.png
-│
-├── sounds/
-│ └── flip.mp3
-
----
-
-## ⚠️ Important Notes
-
-- Works best on **Chrome / Edge**
+- Works best on Chrome / Edge
 - Requires microphone permission
-- First interaction must be a click
-- Designed for **educational & simulation purposes only**
+- Designed for simulation & educational use
 
 ---
 
 ## 👤 Author
 
-**Ritik Yadav**  
-GitHub: https://github.com/ritik-453
-
----
-
-⭐ If you like this project, give it a star!
+Ritik Yadav  
+https://github.com/ritik-453
