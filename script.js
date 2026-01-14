@@ -14,13 +14,28 @@ window.onload = () => {
   if (!SpeechRecognition) return;
 
   recognition = new SpeechRecognition();
-  recognition.lang = "en-IN"; // Better for Indian accents
-  recognition.continuous = true;
+  recognition.lang = "en-IN";
+  recognition.continuous = false; // 🔴 IMPORTANT
   recognition.interimResults = false;
   recognition.maxAlternatives = 5;
 
-  recognition.start();
-  listening = true;
+  startRecognitionSafely();
+};
+
+// 🔁 Auto-restart logic
+function startRecognitionSafely() {
+  try {
+    recognition.start();
+  } catch (e) {}
+
+  recognition.onend = () => {
+    // Restart ONLY if page is active
+    setTimeout(() => {
+      if (document.visibilityState === "visible") {
+        startRecognitionSafely();
+      }
+    }, 300);
+  };
 
   recognition.onresult = (event) => {
     const text =
@@ -36,12 +51,20 @@ window.onload = () => {
       }
     }
   };
-};
+}
 
 // 🪙 Flip button
+let micStarted = false;
+
 function startFlip() {
   result.textContent = "";
   waitingForCall = true;
+
+  // Start mic ONLY once (mobile-safe)
+  if (!micStarted && recognition) {
+    startRecognitionSafely();
+    micStarted = true;
+  }
 
   coin.classList.add("spin");
 
@@ -129,5 +152,6 @@ function finishToss(call, auto = false) {
     `;
   }, 1000);
 }
+
 
 
