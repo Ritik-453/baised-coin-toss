@@ -2,26 +2,19 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Voice Coin Toss Referee</title>
+  <title>Online Coin Toss</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <h1>🪙 Voice Coin Toss</h1>
-  <p class="subtitle">Online referee for toss (voice-controlled)</p>
+  <h1>🪙 Coin Toss</h1>
 
   <div class="coin-container">
-    <img id="coin" src="images/head.png" alt="Coin" />
+    <img id="coin" src="images/head.png" alt="Coin">
   </div>
 
-  <button id="voiceBtn" onclick="startListening()">
-    🎙️ Start Voice Toss
-  </button>
-
-  <p id="voiceStatus" class="status">
-    Say: <b>"Flip the coin"</b>
-  </p>
+  <button id="flipBtn" onclick="startFlip()">FLIP</button>
 
   <div id="result" class="result"></div>
 
