@@ -32,12 +32,12 @@ The system listens silently in the background and detects the caller’s choice 
 
 Detected even inside sentences like:
 > “We will take bharat”  
-> “It is tails for us”
-> “bhai mero to bharat s”
-> “tails h mero”
-> “arey bharat lelo”
-> “rupyo padega bhai”
-> “hmara head hai”
+> “It is tails for us”, 
+> “bhai mero to bharat s”, 
+> “tails h mero”, 
+> “arey bharat lelo”, 
+> “rupyo padega bhai”, 
+> “hmara head hai”, 
 > “tail se jeetenge”
 
 ---
@@ -60,4 +60,5 @@ Detected even inside sentences like:
 
 Ritik Yadav  
 https://github.com/ritik-453
+
 
