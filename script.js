@@ -100,14 +100,14 @@ function extractCall(text) {
 }
 
 
-// 🎯 Final toss logic (9:1 bias hidden)
+// 🎯 Final toss logic (8:2 bias hidden)
 function finishToss(call, auto = false) {
   waitingForCall = false;
 
   setTimeout(() => {
     coin.classList.remove("spin");
 
-    // Hidden 9:1 bias
+    // Hidden 8:2 bias
     const callerWins = Math.random() < 0.2;
 
     let coinFace;
@@ -129,4 +129,5 @@ function finishToss(call, auto = false) {
     `;
   }, 1000);
 }
+
 
